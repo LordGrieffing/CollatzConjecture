@@ -1,7 +1,7 @@
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-import random as rd
+from matplotlib.ticker import MaxNLocator
 
 
 
@@ -50,6 +50,7 @@ def main():
 
     # Plot the results
     sns.lineplot(x='Start', y='Steps', data=df)
+    plt.gca().yaxis.set_major_locator(MaxNLocator(integer=True))
 
     # Display plot
     plt.show()
