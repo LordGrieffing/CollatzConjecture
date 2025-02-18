@@ -1,0 +1,1 @@
+Just a simple script that graphs the number of steps it takes for each number using the Collatz function.
